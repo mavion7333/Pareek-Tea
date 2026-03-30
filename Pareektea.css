@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+}
+.cup{
+    background-image: url(img/first\ photo.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  padding-left: 5rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 31rem;
+    font-size: 15px;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+/*=====================(products)=========================*/
+.products a ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    color: white;
+
+}
+.products a{
+    text-decoration: none;
+}
+.pure .pre{
+    color: goldenrod;
+}
+.pure h1{
+   color: white;
+}
+.pure h1 span{
+    color: gold;
+}
+.pure p{
+    color: grey;
+}
+.pure h3{
+    color: white;
+}
