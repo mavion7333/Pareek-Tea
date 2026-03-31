@@ -492,3 +492,82 @@ header {
 .comment hr{
     color: rgba(210, 180, 140, 0.412);
 }
+
+/*======================(STAY)========================*/
+.stay{
+    text-align: center;
+    background-color: rgb(122,78,45);
+    padding: 4rem 0 ;
+    line-height: 2;
+}
+.stay .stay-connected{
+    color: rgb(200,162,122);
+}
+.stay h1 {
+    font-size: 43px;
+    color: rgb(255,255,255);
+}
+.stay p{
+    color: gray;
+    font-size: 15px;
+    padding: 30px 0;
+}
+.stay input {
+    padding: 8px 124px 8px 15px;
+    font-size: 18px;
+    background: rgb(122,78,45);
+    color: black;
+    border: 1px solid grey;
+}
+.stay button {
+    padding: 12px 30px;
+    background: rgb(200,162,122);
+    color: rgb(122,78,45);
+    border: none;
+    margin-left: 22px;
+}
+
+/*==========================(EXPLORE)========================*/
+.explore{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+.catogary h2{
+    color: rgb(255,255,255)
+}
+.catogary h6 {
+    color: goldenrod;
+    padding: 8px 0 15px 0;
+    font-size: 12px;
+}
+.catogary p{
+    color: grey;
+}
+.ift{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.same{
+    border: 1px solid grey;
+    padding: 10px 15px;
+    color: grey;
+}
+.one{
+    line-height: 2;
+}
+footer {
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 120px;
+    color: grey;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+.terms{
+    display: flex;
+    gap: 30px;
+}
