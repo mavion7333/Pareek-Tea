@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-      font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Playfair Display", serif;
+}
+#wrapper{
+    position: relative;
 }
 .cup{
     background-image: url(img/first\ photo.avif);
@@ -10,8 +14,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-  padding-left: 5rem;
+    padding-left: 5rem;
 }
+/* .cup::before{
+    content: "";
+    position: absolute;
+    height: 100%;width: 100%;
+    background-color: rgba(0, 0, 0, 0.399);
+    top: 0;
+    z-index: -1;
+
+} */
 header{
     display: flex;
     align-items: center;
@@ -34,18 +47,153 @@ header{
 .products a{
     text-decoration: none;
 }
-.pure .pre{
+
+/*======================(pure)=============================*/
+.pure .pre {
     color: goldenrod;
+    padding-bottom: 4rem;
 }
-.pure h1{
-   color: white;
+.pure h1 {
+    color: white;
+    font-size: 4rem;
 }
 .pure h1 span{
     color: gold;
 }
-.pure p{
+.pure .para{
     color: grey;
+    padding: 2rem 0;
 }
 .pure h3{
     color: white;
+}
+.pure .shop{
+    padding: 11px 25px;
+    background-color: rgba(216, 91, 23, 0.629);
+    color: white;
+    border: none;
+}
+.pure .story{
+    padding: 11px 25px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+}
+.years{
+    display: flex;
+    gap: 30px;
+    padding-top: 5rem;
+    font-size: 25px;
+    padding-bottom: 10rem;
+}
+.years p{
+    color: grey;
+    font-size: 13px;
+}
+
+/*=================================(FREE)==============================*/
+.free ul{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(216, 89, 21);
+    padding: 10px;
+}
+
+/*==============================(SELECTION)============================*/
+.selection{
+    background-color: rgba(250, 235, 215, 0.529);
+    padding-top: 10rem;
+    padding: 5rem 5rem 3.5rem 5rem ;
+}
+.our{
+    color: green;
+    font-size: 20px;
+}
+.for{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.for h1{
+    font-size: 45px;
+}
+.for a{
+    text-decoration: none;
+    border: 1px solid brown;
+    padding: 14px 31px;
+    color: brown;
+}
+
+/*==============================(PREMIUM)============================*/
+.premium{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem;
+    position: relative;
+}
+.forpadding{
+    padding: 20px;
+}
+.tea img {
+    height: 270px;
+    width: 317px;
+    object-fit: cover;
+}
+.tea{
+    background-color: white;
+}
+.on-tea{
+    position: absolute;
+    top: 5rem;
+    color: white;
+    padding: 10px;
+}
+.on-tea1 {
+    background-color: rgb(216, 89, 21);
+    padding: 4px;
+    font-size: 13px;
+}
+.on-tea2{
+    background-color: green;
+    margin-top: 5px;
+    padding: 4px;
+    font-size: 13px;
+}
+.tea p{
+    color: rgb(160, 118, 63);
+    padding-top: 20px;
+    font-size: 15px;
+}
+.forpadding h2{
+    font-size: 20px;
+    padding: 18px 0;
+}
+.star{
+    font-size: 12px;
+}
+.star i:nth-child(-n+4) {
+  color: yellow;
+}
+.star i:nth-child(5) {
+    color: grey;
+}
+.star:nth-child(6) {
+    color: grey;
+}
+.rupee{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rupee p span{
+    text-decoration: line-through;
+    color: grey;
+    padding-left: 10px;
+}
+.rupee .cut{
+    color: grey;
+    font-size: 13px;
 }
