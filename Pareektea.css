@@ -5,10 +5,12 @@
     /* font-family: "Open Sans", sans-serif; */
     font-family: "Playfair Display", serif;
 }
-#wrapper{
+
+#wrapper {
     position: relative;
 }
-.cup{
+
+.cup {
     background-image: url(img/first\ photo.avif);
     background-position: center;
     background-size: cover;
@@ -16,6 +18,7 @@
     height: 100%;
     padding-left: 5rem;
 }
+
 /* .cup::before{
     content: "";
     position: absolute;
@@ -25,7 +28,7 @@
     z-index: -1;
 
 } */
-header{
+header {
     display: flex;
     align-items: center;
     gap: 31rem;
@@ -34,8 +37,9 @@ header{
     padding-top: 2rem;
     padding-bottom: 5rem;
 }
+
 /*=====================(products)=========================*/
-.products a ul{
+.products a ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +48,8 @@ header{
     color: white;
 
 }
-.products a{
+
+.products a {
     text-decoration: none;
 }
 
@@ -53,47 +58,55 @@ header{
     color: goldenrod;
     padding-bottom: 4rem;
 }
+
 .pure h1 {
     color: white;
     font-size: 4rem;
 }
-.pure h1 span{
+
+.pure h1 span {
     color: gold;
 }
-.pure .para{
+
+.pure .para {
     color: grey;
     padding: 2rem 0;
 }
-.pure h3{
+
+.pure h3 {
     color: white;
 }
-.pure .shop{
+
+.pure .shop {
     padding: 11px 25px;
     background-color: rgba(216, 91, 23, 0.629);
     color: white;
     border: none;
 }
-.pure .story{
+
+.pure .story {
     padding: 11px 25px;
     margin-left: 10px;
     background-color: black;
     color: white;
     border: 1px solid grey;
 }
-.years{
+
+.years {
     display: flex;
     gap: 30px;
     padding-top: 5rem;
     font-size: 25px;
     padding-bottom: 10rem;
 }
-.years p{
+
+.years p {
     color: grey;
     font-size: 13px;
 }
 
 /*=================================(FREE)==============================*/
-.free ul{
+.free ul {
     display: flex;
     justify-content: space-between;
     color: white;
@@ -102,24 +115,28 @@ header{
 }
 
 /*==============================(SELECTION)============================*/
-.selection{
+.selection {
     background-color: rgba(250, 235, 215, 0.529);
     padding-top: 10rem;
-    padding: 5rem 5rem 3.5rem 5rem ;
+    padding: 5rem 5rem 3.5rem 5rem;
 }
-.our{
+
+.our {
     color: green;
     font-size: 20px;
 }
-.for{
+
+.for {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.for h1{
+
+.for h1 {
     font-size: 45px;
 }
-.for a{
+
+.for a {
     text-decoration: none;
     border: 1px solid brown;
     padding: 14px 31px;
@@ -127,73 +144,351 @@ header{
 }
 
 /*==============================(PREMIUM)============================*/
-.premium{
+.premium {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 5rem;
     position: relative;
 }
-.forpadding{
+
+.forpadding {
     padding: 20px;
 }
+
 .tea img {
     height: 270px;
     width: 317px;
     object-fit: cover;
 }
-.tea{
+
+.tea {
     background-color: white;
+    position: relative;
 }
-.on-tea{
+
+.on-tea {
     position: absolute;
     top: 5rem;
     color: white;
     padding: 10px;
+    z-index: 1;
 }
+
 .on-tea1 {
-    background-color: rgb(216, 89, 21);
+    background-color: rgb(122, 78, 45);
     padding: 4px;
     font-size: 13px;
 }
-.on-tea2{
+
+.on-tea2 {
     background-color: green;
     margin-top: 5px;
     padding: 4px;
     font-size: 13px;
 }
-.tea p{
+
+.on-black {
+    position: absolute;
+    top: 5rem;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    left: 21.5rem;
+}
+
+.on-black1 {
+    background-color: rgb(122, 78, 45);
+    padding: 5px;
+    font-size: 13px;
+}
+
+.on-black2 {
+    background-color: green;
+    margin-top: 5px;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.on-masala {
+    position: absolute;
+    top: 5rem;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    left: 43.1rem;
+}
+
+.on-masala1 {
+    background-color: rgb(122, 78, 45);
+    padding: 5px;
+    font-size: 13px;
+}
+
+.on-masala2 {
+    background-color: green;
+    margin-top: 5px;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.on-green {
+    position: absolute;
+    top: 5rem;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    right: 16.1rem;
+}
+
+.on-green1 {
+    background-color: rgb(122, 78, 45);
+    padding: 5px;
+    font-size: 13px;
+}
+
+.on-green2 {
+    background-color: green;
+    margin-top: 5px;
+    padding: 4px;
+    font-size: 13px;
+}
+
+.tea p {
     color: rgb(160, 118, 63);
     padding-top: 20px;
     font-size: 15px;
 }
-.forpadding h2{
+
+.forpadding h2 {
     font-size: 20px;
     padding: 18px 0;
 }
-.star{
+
+.star {
     font-size: 12px;
 }
+
 .star i:nth-child(-n+4) {
-  color: yellow;
+    color: rgb(251, 191, 36)
 }
+
 .star i:nth-child(5) {
     color: grey;
 }
+
 .star:nth-child(6) {
     color: grey;
 }
-.rupee{
+
+.rupee {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.rupee p span{
+
+.rupee p span {
     text-decoration: line-through;
     color: grey;
     padding-left: 10px;
 }
-.rupee .cut{
+
+.rupee .cut {
     color: grey;
     font-size: 13px;
+}
+
+/*==========================(PERFECT)============================*/
+.perfect {
+    background-color: rgba(0, 0, 0, 0.826);
+    padding: 8rem;
+}
+
+.find {
+    text-align: center;
+}
+
+.find h1 {
+    color: white;
+    font-size: 49px;
+}
+
+.find p {
+    color: rgb(200, 162, 122);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.box1 img {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.box1 {
+    position: relative;
+}
+
+.box1::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.525);
+    height: 99%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.box1 p {
+    color: darkgrey;
+    font-size: 12px;
+}
+
+.box1 h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.varities {
+    position: absolute;
+    bottom: 25px;
+    z-index: 5;
+    margin-left: 10px;
+    line-height: 2;
+}
+
+/*=========================(HERITAGE)========================*/
+.heritage {
+    background-color: rgba(245, 245, 220, 0.616);
+    padding: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.heritage img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+.leaf{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.garden{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.our-heritage{
+    color: green;
+}
+.heritage p{
+    color: grey;
+    font-size: 15px;
+}
+.leaf p{
+    font-size: 12px;
+}
+.leaf1 i{
+    color: lightgreen;
+}
+.leaf2 i{
+    color: green;
+}
+.leaf3 i{
+    color: rgb(122, 78, 45);
+}
+.leaf4 i{
+    color: red;
+}
+.learn button{
+    background: rgb(122, 78, 45);
+    color: white;
+    padding: 9px 13px;
+    border: none;
+}
+.heritage .craft{
+    color: rgb(122, 78, 45);
+}
+
+/*====================(TESTIMONIALS)-=======================*/
+.testimonials{
+    background-color:rgba(210, 180, 140, 0.412);
+    text-align: center;
+    padding: 5rem;
+}
+.comments{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 5rem;
+}
+.testimonials .test{
+    COLOR: GREEN;
+    FONT-SIZE: 16PX;
+}
+.testimonials h1 {
+    font-weight: 100;
+    font-size: 47px;
+}
+.comment{
+    background-color: white;
+    padding: 20px;
+}
+.comment p{
+    text-align: justify;
+}
+.comment hr{
+    margin: 15px 0 0 0;
+}
+.star2{
+    display: flex;
+    color: rgb(251, 191, 36);
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.quote{
+    margin-left: 10.5rem;
+    color: rgba(210, 180, 140, 0.412);
+}
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 16px 0 0px 0;
+    text-align: start;
+    font-size: 13px;
+    color: grey;
+}
+.name .pm {
+    background-color: rgba(210, 180, 140, 0.412);
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    color: brown;
+    border: none;
+}
+.name h5{
+    color: black;
+    font-size: 12px;
+}
+.name p{
+    font-size: 12px;
+    color: gray;
+}
+.comment hr{
+    color: rgba(210, 180, 140, 0.412);
 }
