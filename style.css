@@ -4,12 +4,20 @@
     box-sizing: border-box;
     font-family: "Cormorant Garamond", serif;
 }
-h1, h2, h3, h4,h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Cormorant Garamond", serif;
 }
-p{
+
+p {
     font-family: "Jost", sans-serif;
 }
+
 .cup {
     background-image: url(img/first\ photo.avif);
     background-position: center;
@@ -20,7 +28,8 @@ p{
     z-index: 4;
     position: relative;
 }
-.black{
+
+.black {
     padding-left: 5rem;
 }
 
@@ -33,12 +42,13 @@ p{
     top: 0;
     z-index: -1;
 }
+
 header {
     display: flex;
     align-items: center;
     gap: 31rem;
     font-size: 15px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding-top: 2rem;
     padding-bottom: 5rem;
 }
@@ -50,7 +60,7 @@ header {
     justify-content: center;
     gap: 20px;
     list-style: none;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -65,7 +75,7 @@ header {
 }
 
 .pure h1 {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 4rem;
 }
 
@@ -79,22 +89,22 @@ header {
 }
 
 .pure h3 {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
 
 .pure .shop {
     padding: 11px 25px;
     /* background-color: rgba(216, 91, 23, 0.629); */
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     border: none;
-    background-color: rgb(122,78,45);
+    background-color: rgb(122, 78, 45);
 }
 
 .pure .story {
     padding: 11px 25px;
     margin-left: 10px;
     background-color: black;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     border: 1px solid grey;
 }
 
@@ -115,8 +125,8 @@ header {
 .free ul {
     display: flex;
     justify-content: space-between;
-    color: rgb(255,255,255);
-    background-color: rgb(122,78,45);
+    color: rgb(255, 255, 255);
+    background-color: rgb(122, 78, 45);
     padding: 10px;
 }
 
@@ -144,9 +154,9 @@ header {
 
 .for a {
     text-decoration: none;
-    border: 1px solid rgb(122,78,45);
+    border: 1px solid rgb(122, 78, 45);
     padding: 14px 31px;
-    color: rgb(122,78,45);
+    color: rgb(122, 78, 45);
 }
 
 /*==============================(PREMIUM)============================*/
@@ -169,14 +179,14 @@ header {
 }
 
 .tea {
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     position: relative;
 }
 
 .on-tea {
     position: absolute;
     top: 5rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding: 10px;
     z-index: 1;
 }
@@ -197,7 +207,7 @@ header {
 .on-black {
     position: absolute;
     top: 5rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding: 10px;
     z-index: 1;
     left: 21.5rem;
@@ -219,7 +229,7 @@ header {
 .on-masala {
     position: absolute;
     top: 5rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding: 10px;
     z-index: 1;
     left: 43.1rem;
@@ -241,7 +251,7 @@ header {
 .on-green {
     position: absolute;
     top: 5rem;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding: 10px;
     z-index: 1;
     right: 16.1rem;
@@ -261,7 +271,7 @@ header {
 }
 
 .tea p {
-    color: rgb(200,162,122);
+    color: rgb(200, 162, 122);
     padding-top: 20px;
     font-size: 15px;
 }
@@ -315,7 +325,7 @@ header {
 }
 
 .find h1 {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 49px;
 }
 
@@ -356,7 +366,7 @@ header {
 }
 
 .box1 h2 {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
@@ -378,29 +388,34 @@ header {
     line-height: 1.5;
     position: relative;
 }
+
 .heritage .year {
     position: absolute;
     bottom: 94px;
     padding: 10px;
-    border: 1px solid rgb(200,162,122);
+    border: 1px solid rgb(200, 162, 122);
     left: 37rem;
     background-color: rgba(245, 245, 220);
 }
-.heritage .year h1{
+
+.heritage .year h1 {
     font-size: 40px;
-    color: rgb(122,78,45);
+    color: rgb(122, 78, 45);
 }
+
 .heritage img {
     height: 500px;
     width: 500px;
     object-fit: cover;
 }
-.leaf{
+
+.leaf {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.garden{
+
+.garden {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -408,79 +423,98 @@ header {
     padding-bottom: 30px;
 
 }
-.our-heritage{
+
+.our-heritage {
     color: green;
 }
-.heritage p{
+
+.heritage p {
     color: grey;
     font-size: 15px;
 }
-.leaf p{
+
+.leaf p {
     font-size: 12px;
 }
-.leaf1 i{
+
+.leaf1 i {
     color: lightgreen;
 }
-.leaf2 i{
+
+.leaf2 i {
     color: green;
 }
-.leaf3 i{
+
+.leaf3 i {
     color: rgb(122, 78, 45);
 }
-.leaf4 i{
+
+.leaf4 i {
     color: red;
 }
-.learn button{
+
+.learn button {
     background: rgb(122, 78, 45);
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding: 9px 13px;
     border: none;
 }
-.heritage .craft{
-    color: rgb(122,78,45);
+
+.heritage .craft {
+    color: rgb(122, 78, 45);
 }
 
 /*====================(TESTIMONIALS)-=======================*/
-.testimonials{
-    background-color:rgba(210, 180, 140, 0.412);
+.testimonials {
+    background-color: rgba(210, 180, 140, 0.412);
     text-align: center;
     padding: 5rem;
 }
-.comments{
+
+.comments {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
     padding-top: 5rem;
 }
-.testimonials .test{
+
+.testimonials .test {
     COLOR: GREEN;
     FONT-SIZE: 16PX;
 }
+
 .testimonials h1 {
     font-weight: 100;
     font-size: 47px;
 }
-.comment{
-    background-color: rgb(255,255,255);
+
+.comment {
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
-.comment p{
+
+.comment p {
     text-align: justify;
 }
-.comment hr{
+
+.comment hr {
     margin: 15px 0 0 0;
 }
-.star2{
+
+.star2 {
     display: flex;
+    justify-content: space-between;
     color: rgb(251, 191, 36);
     font-size: 13px;
     padding-bottom: 10px;
 }
-.quote{
+
+.quote {
     margin-left: 10.5rem;
     color: rgba(210, 180, 140, 0.412);
 }
+
 .name {
     display: flex;
     align-items: center;
@@ -491,96 +525,113 @@ header {
     font-size: 13px;
     color: grey;
 }
+
 .name .pm {
     background-color: rgba(210, 180, 140, 0.412);
     border: 1px solid;
     border-radius: 50%;
     padding: 10px;
-    color: rgb(122,78,45);
+    color: rgb(122, 78, 45);
     border: none;
 }
-.name h5{
+
+.name h5 {
     color: black;
     font-size: 12px;
 }
-.name p{
+
+.name p {
     font-size: 12px;
     color: gray;
 }
-.comment hr{
+
+.comment hr {
     color: rgba(210, 180, 140, 0.412);
 }
 
 /*======================(STAY)========================*/
-.stay{
+.stay {
     text-align: center;
-    background-color: rgb(122,78,45);
-    padding: 4rem 0 ;
+    background-color: rgb(122, 78, 45);
+    padding: 4rem 0;
     line-height: 2;
 }
-.stay .stay-connected{
-    color: rgb(200,162,122);
+
+.stay .stay-connected {
+    color: rgb(200, 162, 122);
 }
+
 .stay h1 {
     font-size: 43px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
-.stay p{
+
+.stay p {
     color: gray;
     font-size: 15px;
     padding: 30px 0;
 }
+
 .stay input {
     padding: 8px 124px 8px 15px;
     font-size: 18px;
-    background: rgb(122,78,45);
+    background: rgb(122, 78, 45);
     color: black;
-    border: 1px solid rgb(200,162,122);
+    border: 1px solid rgb(200, 162, 122);
 }
+
 .stay button {
     padding: 8px 24px;
-    background: rgb(200,162,122);
-    color: rgb(122,78,45);
+    background: rgb(200, 162, 122);
+    color: rgb(122, 78, 45);
     border: none;
     margin-left: 22px;
     font-size: 20px;
 }
 
 /*==========================(EXPLORE)========================*/
-.explore{
+.explore {
     display: flex;
     justify-content: space-around;
     padding: 5rem;
     background-color: rgba(0, 0, 0, 0.863);
 }
-.catogary h2{
-    color: rgb(255,255,255)
+
+.catogary h2 {
+    color: rgb(255, 255, 255)
 }
+
 .catogary h6 {
-    color: rgb(200,162,122);
+    color: rgb(200, 162, 122);
     padding: 8px 0 15px 0;
     font-size: 14px;
 }
-.catogary p{
+
+.catogary p {
     color: grey;
 }
-.ift{
+
+.ift {
     padding-top: 30px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.same{
+
+.same {
     border: 1px solid grey;
     padding: 10px 15px;
     color: grey;
 }
-.one p{
+
+.one p {
     padding-top: 15px;
 }
-.one{
+
+.one {
     color: rgba(9, 27, 141, 0.66);
 }
+
 footer {
     border-top: 1px solid grey;
     display: flex;
@@ -589,7 +640,70 @@ footer {
     color: grey;
     background-color: rgba(0, 0, 0, 0.863);
 }
-.terms{
+
+.terms {
     display: flex;
     gap: 30px;
+}
+
+/*=============================(media-Quary)===============================*/
+
+
+@media (max-width: 1024px) {
+    .premium {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1; */
+        gap: 20px;
+    }
+
+    .box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 349px);
+    gap: 25px;
+}
+
+    .box1::before {
+    height: 99%;
+    width: 86%;
+    }
+    .comments {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .premium,
+    .box,
+    .comments {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px;
+        gap: 20px;
+        /* grid-template-rows: 1fr; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .explore, footer{
+        font-size: 70%;
+    }
+    header{
+        gap: 30%;
+    }
+    .box1::before {
+    height: 99%;
+    width: 100%;
+}
+    .heritage img{
+        height: 80%;width: 80%;
+    }
 }
