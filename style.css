@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Cormorant Garamond", serif;
+    /* font-family: "Cormorant Garamond", serif; */
 }
 
 h1,
@@ -14,7 +14,7 @@ h6 {
     font-family: "Cormorant Garamond", serif;
 }
 
-p {
+body {
     font-family: "Jost", sans-serif;
 }
 
@@ -38,7 +38,7 @@ p {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.399);
+    background-color: rgba(53, 52, 52, 0.488);
     top: 0;
     z-index: -1;
 }
@@ -67,16 +67,19 @@ header {
     text-decoration: none;
 }
 
-.products ul li{
+.products ul li {
     position: relative;
 }
-.products ul li::before{
+
+.products ul li::before {
     transform: translateX(-0%);
 }
-.products ul li:hover::before{
+
+.products ul li:hover::before {
     width: 100%;
 }
-.products ul li::before{
+
+.products ul li::before {
     content: "";
     position: absolute;
     height: 1.5px;
@@ -90,7 +93,7 @@ header {
 
 /*======================(pure)=============================*/
 .pure .pre {
-    color: rgb(200,162,122);
+    color: rgb(200, 162, 122);
     padding-bottom: 4rem;
 }
 
@@ -100,7 +103,8 @@ header {
 }
 
 .pure h1 span {
-    color: rgb(200,162,122);
+    color: rgb(200, 162, 122);
+    font-style: italic;
 }
 
 .pure .para {
@@ -116,19 +120,25 @@ header {
     padding: 11px 25px;
     color: rgb(255, 255, 255);
     border: none;
-    background-color: rgb(122, 78, 45);
-}
+    background-color: rgb(122,78,45);
+    transition: all 0.5s;
 
+}
+.pure .shop:hover{
+    background-color: rgb(118, 52, 2);
+    transition: all 0.5s;
+}
 .pure .story {
     padding: 11px 25px;
     margin-left: 10px;
     background-color: black;
     color: rgb(255, 255, 255);
     border: 1px solid grey;
+    transition: all 0.5s;
 }
-.pure .story:hover{
+
+.pure .story:hover {
     color: black;
-    font-weight: 800;
     background-color: rgba(255, 255, 255, 0.693);
     transition: all 0.5s ease;
 }
@@ -206,26 +216,33 @@ header {
 .tea {
     background-color: rgb(255, 255, 255);
     position: relative;
+    transition: all 1s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.267);
 }
+
 .tea::before {
     content: "SAVE 30%";
     height: 0%;
     width: 100%;
     position: absolute;
-    background-color: rgb(200,162,122);
+    background-color: rgb(200, 162, 122);
     bottom: 42.9%;
     display: flex;
     justify-content: center;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     transition: 0.5s ease;
     overflow: hidden;
 }
-.tea:hover::before{
+
+.tea:hover::before {
     width: 100%;
     height: 7%;
 }
-.tea::before{
+.tea:hover{
+    transform: scale(1.05);
+}
+.tea::before {
     transform: translateY(-0%);
 }
 
@@ -398,6 +415,7 @@ header {
     color: darkgrey;
     font-size: 12px;
 }
+
 .box {
     display: flex;
     gap: 20px;
@@ -405,7 +423,7 @@ header {
     justify-content: center;
 }
 
- .box1 {
+.box1 {
     position: relative;
     overflow: hidden;
     width: 300px;
@@ -432,7 +450,7 @@ header {
 
 .box1:hover img {
     transform: scale(1.1);
-} 
+}
 
 .box1 h2 {
     color: rgb(255, 255, 255);
@@ -528,8 +546,13 @@ header {
     padding: 9px 13px;
     border: none;
 }
+.learn button:hover{
+    background-color: rgb(118, 52, 2);
+    transition: all 0.5s;
+}
 
 .heritage .craft {
+    font-style: italic;
     color: rgb(122, 78, 45);
 }
 
@@ -636,7 +659,7 @@ header {
 }
 
 .stay p {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     padding: 30px 0;
 }
@@ -677,15 +700,16 @@ header {
     font-size: 14px;
 }
 
-.catogary p {
+.catogary  p {
     color: grey;
 }
 
-.ift {
+.ift a{
     padding-top: 30px;
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .same {
@@ -694,12 +718,14 @@ header {
     color: grey;
 }
 
-.one p {
+.one p{
     padding-top: 15px;
+    text-decoration: none;
 }
 
-.one {
+.one a{
     color: rgba(9, 27, 141, 0.66);
+    text-decoration: none;
 }
 
 footer {
@@ -711,9 +737,11 @@ footer {
     background-color: rgba(0, 0, 0, 0.863);
 }
 
-.terms {
+.terms a {
     display: flex;
     gap: 30px;
+    text-decoration: none;
+    color: gray;
 }
 
 /*=============================(media-Quary)===============================*/
