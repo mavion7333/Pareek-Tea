@@ -668,9 +668,10 @@ header {
     padding: 8px 124px 8px 15px;
     font-size: 18px;
     background: rgb(122, 78, 45);
-    color: black;
-    color: rgb(200, 162, 122);
     border: 1px solid rgb(200, 162, 122);
+}
+input::placeholder {
+    color: rgba(200, 162, 122, 0.81);
 }
 
 .stay button {
