@@ -175,7 +175,6 @@ header {
     display: flex;
 }
 
-/* animation */
 @keyframes scroll {
     0% {
         transform: translateX(0%);
