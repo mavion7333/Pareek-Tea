@@ -119,14 +119,16 @@ header {
     padding: 11px 25px;
     color: rgb(255, 255, 255);
     border: none;
-    background-color: rgb(122,78,45);
+    background-color: rgb(122, 78, 45);
     transition: all 0.5s;
 
 }
-.pure .shop:hover{
+
+.pure .shop:hover {
     background-color: rgb(118, 52, 2);
     transition: all 0.5s;
 }
+
 .pure .story {
     padding: 11px 25px;
     margin-left: 10px;
@@ -155,13 +157,33 @@ header {
     font-size: 13px;
 }
 
-/*=================================(FREE)==============================*/
-.free ul {
+/*=================================(top-bar)==============================*/
+
+.top-bar {
+    background: #8B5A2B;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scroll-text span ul {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 12s linear infinite;
+    color: white;
+    font-size: 16px;
+    gap: 10rem;
     display: flex;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
-    background-color: rgb(122, 78, 45);
-    padding: 10px;
+}
+
+/* animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /*==============================(SELECTION)============================*/
@@ -238,9 +260,11 @@ header {
     width: 100%;
     height: 7%;
 }
-.tea:hover{
+
+.tea:hover {
     transform: scale(1.05);
 }
+
 .tea::before {
     transform: translateY(-0%);
 }
@@ -545,7 +569,8 @@ header {
     padding: 9px 13px;
     border: none;
 }
-.learn button:hover{
+
+.learn button:hover {
     background-color: rgb(118, 52, 2);
     transition: all 0.5s;
 }
@@ -669,6 +694,7 @@ header {
     background: rgb(122, 78, 45);
     border: 1px solid rgb(200, 162, 122);
 }
+
 input::placeholder {
     color: rgba(200, 162, 122, 0.81);
 }
@@ -700,11 +726,11 @@ input::placeholder {
     font-size: 14px;
 }
 
-.catogary  p {
+.catogary p {
     color: grey;
 }
 
-.ift a{
+.ift a {
     padding-top: 30px;
     display: flex;
     align-items: center;
@@ -718,12 +744,12 @@ input::placeholder {
     color: grey;
 }
 
-.one p{
+.one p {
     padding-top: 15px;
     text-decoration: none;
 }
 
-.one a{
+.one a {
     color: rgba(9, 27, 141, 0.66);
     text-decoration: none;
 }
