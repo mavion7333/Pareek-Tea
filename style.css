@@ -61,16 +61,36 @@ header {
     gap: 20px;
     list-style: none;
     color: rgb(255, 255, 255);
-
 }
 
 .products a {
     text-decoration: none;
 }
 
+.products ul li{
+    position: relative;
+}
+.products ul li::before{
+    transform: translateX(-0%);
+}
+.products ul li:hover::before{
+    width: 100%;
+}
+.products ul li::before{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 0%;
+    background-color: rgb(200, 162, 122);
+    bottom: -3px;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+
 /*======================(pure)=============================*/
 .pure .pre {
-    color: goldenrod;
+    color: rgb(200,162,122);
     padding-bottom: 4rem;
 }
 
@@ -80,7 +100,7 @@ header {
 }
 
 .pure h1 span {
-    color: gold;
+    color: rgb(200,162,122);
 }
 
 .pure .para {
@@ -94,7 +114,6 @@ header {
 
 .pure .shop {
     padding: 11px 25px;
-    /* background-color: rgba(216, 91, 23, 0.629); */
     color: rgb(255, 255, 255);
     border: none;
     background-color: rgb(122, 78, 45);
@@ -106,6 +125,12 @@ header {
     background-color: black;
     color: rgb(255, 255, 255);
     border: 1px solid grey;
+}
+.pure .story:hover{
+    color: black;
+    font-weight: 800;
+    background-color: rgba(255, 255, 255, 0.693);
+    transition: all 0.5s ease;
 }
 
 .years {
@@ -159,7 +184,7 @@ header {
     color: rgb(122, 78, 45);
 }
 
-/*==============================(PREMIUM)============================*/
+/*==============================(SELECTION-|-PREMIUM)============================*/
 .premium {
     display: flex;
     align-items: center;
@@ -181,6 +206,27 @@ header {
 .tea {
     background-color: rgb(255, 255, 255);
     position: relative;
+}
+.tea::before {
+    content: "SAVE 30%";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(200,162,122);
+    bottom: 42.9%;
+    display: flex;
+    justify-content: center;
+    color: rgb(255,255,255);
+    font-size: 20px;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+.tea:hover::before{
+    width: 100%;
+    height: 7%;
+}
+.tea::before{
+    transform: translateY(-0%);
 }
 
 .on-tea {
@@ -345,25 +391,48 @@ header {
     height: 350px;
     width: 300px;
     object-fit: cover;
-}
-
-.box1 {
-    position: relative;
-}
-
-.box1::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.525);
-    height: 99%;
-    width: 100%;
-    position: absolute;
-    top: 0;
+    transition: transform 0.5s ease;
 }
 
 .box1 p {
     color: darkgrey;
     font-size: 12px;
 }
+.box {
+    display: flex;
+    gap: 20px;
+    padding-top: 5rem;
+    justify-content: center;
+}
+
+ .box1 {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 350px;
+}
+
+.box1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.box1::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.box1:hover img {
+    transform: scale(1.1);
+} 
 
 .box1 h2 {
     color: rgb(255, 255, 255);
@@ -567,7 +636,7 @@ header {
 }
 
 .stay p {
-    color: gray;
+    color: rgb(255,255,255);
     font-size: 15px;
     padding: 30px 0;
 }
@@ -577,6 +646,7 @@ header {
     font-size: 18px;
     background: rgb(122, 78, 45);
     color: black;
+    color: rgb(200, 162, 122);
     border: 1px solid rgb(200, 162, 122);
 }
 
@@ -654,27 +724,26 @@ footer {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1; */
         gap: 20px;
     }
 
     .box {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 349px);
-    gap: 25px;
-}
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 349px);
+        gap: 25px;
+    }
 
     .box1::before {
-    height: 99%;
-    width: 86%;
+        height: 99%;
+        width: 86%;
     }
+
     .comments {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -687,23 +756,32 @@ footer {
         display: grid;
         grid-template-columns: 300px;
         gap: 20px;
-        /* grid-template-rows: 1fr; */
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .explore, footer{
+
+    .explore,
+    footer {
         font-size: 70%;
     }
-    header{
+
+    header {
         gap: 30%;
     }
+
     .box1::before {
-    height: 99%;
-    width: 100%;
-}
-    .heritage img{
-        height: 80%;width: 80%;
+        height: 99%;
+        width: 100%;
+    }
+
+    .heritage img {
+        height: 80%;
+        width: 80%;
+    }
+
+    .stay button {
+        margin-top: 10px;
     }
 }
