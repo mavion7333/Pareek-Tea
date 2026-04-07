@@ -716,7 +716,7 @@ input::placeholder {
 }
 
 .catogary h2 {
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 
 .catogary h6 {
@@ -870,18 +870,113 @@ footer {
     font-size: 20px;
     margin-top: 2rem;
 }
-.cart button{
-    padding: 10px 5rem;
+.cart button {
+    padding: 6px 10rem;
+    margin-left: 10px;
+    background-color:  rgb(122, 78, 45);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
 }
 .cart p{
     border: 1px solid grey;
+    padding: 10px 4rem;
 }
+.malty{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 2rem;
+}
+.malty p {
+    border: 1px solid rgb(122, 78, 45);
+    color: rgb(200, 162, 122);
+    font-size: 12px;
+    padding: 3px 10px;
+    opacity: 0.6;
+}
+.free {
+    display: flex;
+    text-align: center;
+    border: 1px solid rgb(200, 162, 122);
+    justify-content: space-around;
+    font-size: 14px;
+    margin-top: 2rem;
+    padding: 10px;
+}
+.delivery i{
+    color: black;
+}
+.fresh i{
+    color: green;
+}
+.return i {
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 183, 254);
+    padding: 3px 1px;
+    border-radius: 3px;
+}
+.color p{
+    color: grey;
+    font-size: 10px;
+}
+/*===============================(GOLD2 - BOLD)======================*/
 .bold p{
     color: grey;
     padding-top: 1rem; 
 }
 
+/*========================(TEST_IMAGES)============================*/
+.test-images{
+    display: flex;
+    gap: 20px;
+    padding-left: 5rem;
+    padding-top: 10px; 
+}
+.test-images .frist img{
+    height: 100px;width: 100px;
+    object-fit: cover;
+}
+.test-images .one img{
+    border: 2px solid rgb(122, 78, 45);
+}
+.test-images .two img{
+    opacity: 0.6;
+}
 
+/*============================(DESCRIPTION)============================*/
+.description {
+    display: flex;
+    margin: 0 5rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid rgb(200, 162, 122);;
+    border-top: 1px solid rgb(200, 162, 122);;
+}
+.description p{
+    padding: 10px 30px;
+    font-size: 13px;
+    color: grey;
+}
+.description p span{
+    padding-bottom: 10px;
+    color: rgb(122, 78, 45);
+    border-bottom: 2px solid rgb(122, 78, 45);
+    
+}
+
+/*============================(may-like)===============================*/
+.may-like{
+    padding-top: 2rem;
+}
+.may-like .space{
+    color: grey;
+    padding-bottom: 50px;
+    margin-left: 5rem;
+}
+.tea2 {
+    width: 19.8rem;
+    margin-left: 5rem;
+    margin-bottom: 4rem;
+}
 /*=============================(media-Quary)==============================*/
 
 
