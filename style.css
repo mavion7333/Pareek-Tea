@@ -108,6 +108,7 @@ header p{
     left: 6px;
     /* background-color: rgb(122, 78, 45); */
     width: 100%;
+    top: -2px;
 }
 .pure h1 {
     color: rgb(255, 255, 255);
@@ -901,7 +902,7 @@ footer {
     align-items: center;
     justify-content: center;
     border: 1px solid grey;
-    gap: 5rem;
+    gap: 3rem;
     padding: 8px 1rem;
     font-size: 25px;
 }
@@ -1070,4 +1071,12 @@ footer {
     .stay button {
         margin-top: 10px;
     }
+
+    .head2{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
+
+
+   
