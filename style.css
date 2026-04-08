@@ -1076,6 +1076,18 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+
+    .gold{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .gold2{
+        font-size: 50%;
+        width: 70%;
+    }
+    .gold1 img{
+        height: 70%;width: 70%;
+    }
 }
 
 
