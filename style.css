@@ -46,12 +46,14 @@ header{
     display: flex;
     align-items: center;
     gap: 31rem;
-    font-size: 15px;
     color: rgb(255, 255, 255);
     padding-top: 2rem;
     padding-bottom: 5rem;
 }
-
+header p{
+    font-size: 12px;
+    letter-spacing: 3px;
+}
 /*=====================(products)=========================*/
 .products a ul {
     display: flex;
@@ -94,8 +96,19 @@ header{
 .pure .pre {
     color: rgb(200, 162, 122);
     padding-bottom: 4rem;
+    padding-left: 60px;
+    font-size: smaller;
 }
-
+.pure{
+    position: relative;
+}
+.pre::before {
+    content: "------------------";
+    position: absolute;
+    left: 6px;
+    /* background-color: rgb(122, 78, 45); */
+    width: 100%;
+}
 .pure h1 {
     color: rgb(255, 255, 255);
     font-size: 4rem;
@@ -121,7 +134,7 @@ header{
     border: none;
     background-color: rgb(122, 78, 45);
     transition: all 0.5s;
-
+    cursor: pointer;
 }
 
 .pure .shop:hover {
@@ -136,6 +149,7 @@ header{
     color: rgb(255, 255, 255);
     border: 1px solid grey;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .pure .story:hover {
@@ -163,6 +177,7 @@ header{
     background: #8B5A2B;
     overflow: hidden;
     white-space: nowrap;
+    padding: 7px;
 }
 
 .scroll-text span ul {
@@ -170,9 +185,10 @@ header{
     padding-left: 100%;
     animation: scroll 15s linear infinite;
     color: white;
-    font-size: 16px;
-    gap: 10rem;
+    font-size: smaller;
+    gap: 7rem;
     display: flex;
+    letter-spacing: 3px;
 }
 
 @keyframes scroll {
@@ -567,6 +583,7 @@ header{
     color: rgb(255, 255, 255);
     padding: 9px 13px;
     border: none;
+    cursor: pointer;
 }
 
 .learn button:hover {
