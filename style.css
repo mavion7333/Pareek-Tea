@@ -893,11 +893,18 @@ footer {
     background-color:  rgb(122, 78, 45);
     color: rgb(255, 255, 255);
     font-size: 15px;
+    cursor: pointer;
 }
-.cart p{
+.cart .quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid grey;
-    padding: 10px 4rem;
+    gap: 5rem;
+    padding: 8px 1rem;
+    font-size: 25px;
 }
+
 .malty{
     display: flex;
     align-items: center;
@@ -937,7 +944,7 @@ footer {
     font-size: 10px;
 }
 /*===============================(GOLD2 - BOLD)======================*/
-.bold p{
+.bold .vally{
     color: grey;
     padding-top: 1rem; 
 }
